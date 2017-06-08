@@ -44,9 +44,12 @@
 
 - (void)setupDelegateFeedbackView {
     self.status = DelegateFeedbackViewStatusNone;
+
     [self updateAcceptTitle];
     [self updateDeclineTitle];
     [self updateTitle];
+
+    [self updateAcceptDeclineImages];
     [self updateValidityImage];
 }
 
@@ -70,17 +73,17 @@
     }
 }
 
-- (void)updateAcceptTitle {
-    if (self.acceptLabel) {
-        self.acceptLabel.text = self.acceptTitle;
-    }
-}
-
 - (void)updateAcceptDeclineImages {
     self.acceptImageView.highlighted =
         (self.status == DelegateFeedbackViewStatusAccept) ? YES : NO;
     self.declineImageView.highlighted =
         (self.status == DelegateFeedbackViewStatusDecline) ? YES : NO;
+}
+
+- (void)updateAcceptTitle {
+    if (self.acceptLabel) {
+        self.acceptLabel.text = self.acceptTitle;
+    }
 }
 
 - (void)updateDeclineTitle {

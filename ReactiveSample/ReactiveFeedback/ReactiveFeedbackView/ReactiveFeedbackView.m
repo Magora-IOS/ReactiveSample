@@ -1,6 +1,8 @@
 
 #import "ReactiveFeedbackView.h"
 
+#import <ReactiveObjC/ReactiveObjC.h>
+
 @interface ReactiveFeedbackView ()
 
 @property (nonatomic, assign, readwrite) ReactiveFeedbackViewStatus status;
@@ -27,86 +29,68 @@
     [self setupReactiveFeedbackView];
 }
 
-/*
-- (void)setAcceptTitle:(NSString *)title {
-    _acceptTitle = title;
-    [self updateAcceptTitle];
-}
-
-- (void)setDeclineTitle:(NSString *)title {
-    _declineTitle = title;
-    [self updateDeclineTitle];
-}
-
-- (void)setTitle:(NSString *)title {
-    _title = title;
-    [self updateTitle];
-}
-*/
-
 #pragma mark - PRIVATE
 
 - (void)setupReactiveFeedbackView {
     self.status = ReactiveFeedbackViewStatusNone;
-    /*
-    [self updateAcceptTitle];
-    [self updateDeclineTitle];
-    [self updateTitle];
-    [self updateValidityImage];
-    */
+
+    [self setupAccept];
+    [self setupDecline];
+    [self setupTitle];
+
+    [self setupAcceptDeclineImages];
+    [self setupValidityImage];
 }
 
-/*
-- (IBAction)accept:(id)sender {
-    self.status = DelegateFeedbackViewStatusAccept;
-    [self updateAcceptDeclineImages];
-    [self updateValidityImage];
-    [self reportStatus];
+- (void)setupAccept {
+    RAC(self.acceptLabel, text) = RACObserve(self, acceptTitle);
+
+    @weakify(self);
+    [[self.acceptButton
+        rac_signalForControlEvents:UIControlEventTouchUpInside]
+        subscribeNext:^(id x) {
+            @strongify(self);
+            self.status = ReactiveFeedbackViewStatusAccept;
+        }];
 }
 
-- (IBAction)decline:(id)sender {
-    self.status = DelegateFeedbackViewStatusDecline;
-    [self updateAcceptDeclineImages];
-    [self updateValidityImage];
-    [self reportStatus];
+- (void)setupAcceptDeclineImages {
+    @weakify(self);
+    [RACObserve(self, status)
+        subscribeNext:^(id x) {
+            @strongify(self);
+            self.acceptImageView.highlighted =
+                (self.status == ReactiveFeedbackViewStatusAccept) ? YES : NO;
+            self.declineImageView.highlighted =
+                (self.status == ReactiveFeedbackViewStatusDecline) ? YES : NO;
+        }];
 }
 
-- (void)reportStatus {
-    if (self.delegate) {
-        [self.delegate delegateFeedbackView:self status:self.status];
-    }
+- (void)setupDecline {
+    RAC(self.declineLabel, text) = RACObserve(self, declineTitle);
+
+    @weakify(self);
+    [[self.declineButton
+        rac_signalForControlEvents:UIControlEventTouchUpInside]
+        subscribeNext:^(id x) {
+            @strongify(self);
+            self.status = ReactiveFeedbackViewStatusDecline;
+        }];
 }
 
-- (void)updateAcceptTitle {
-    if (self.acceptLabel) {
-        self.acceptLabel.text = self.acceptTitle;
-    }
+- (void)setupTitle {
+    RAC(self.titleLabel, text) = RACObserve(self, title);
 }
 
-- (void)updateAcceptDeclineImages {
-    self.acceptImageView.highlighted =
-        (self.status == DelegateFeedbackViewStatusAccept) ? YES : NO;
-    self.declineImageView.highlighted =
-        (self.status == DelegateFeedbackViewStatusDecline) ? YES : NO;
+- (void)setupValidityImage {
+    @weakify(self);
+    [RACObserve(self, status)
+        subscribeNext:^(id x) {
+            @strongify(self);
+            self.validityImageView.highlighted =
+                (self.status != ReactiveFeedbackViewStatusNone) ? YES : NO;
+        }];
 }
-
-- (void)updateDeclineTitle {
-    if (self.declineLabel) {
-        self.declineLabel.text = self.declineTitle;
-    }
-}
-
-- (void)updateTitle {
-    if (self.titleLabel) {
-        self.titleLabel.text = self.title;
-    }
-}
-
-- (void)updateValidityImage {
-    self.validityImageView.highlighted =
-        (self.status != DelegateFeedbackViewStatusNone) ? YES : NO;
-}
-*/
 
 @end
 
