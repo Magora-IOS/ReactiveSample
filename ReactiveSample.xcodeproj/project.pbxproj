@@ -15,6 +15,10 @@
 		13CCC0531EE906C10039004D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13CCC0511EE906C10039004D /* LaunchScreen.storyboard */; };
 		13CCC05F1EE916520039004D /* UIView+Embed.m in Sources */ = {isa = PBXBuildFile; fileRef = 13CCC05C1EE916520039004D /* UIView+Embed.m */; };
 		13CCC0601EE916520039004D /* UIView+NibFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 13CCC05E1EE916520039004D /* UIView+NibFile.m */; };
+		13E570171EE91906005B0380 /* DelegateFeedbackContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E570161EE91906005B0380 /* DelegateFeedbackContainerView.m */; };
+		13E570191EE91923005B0380 /* DelegateFeedbackContainerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13E570181EE91923005B0380 /* DelegateFeedbackContainerView.xib */; };
+		13E5701D1EE91C84005B0380 /* DelegateFeedbackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E5701B1EE91C84005B0380 /* DelegateFeedbackView.m */; };
+		13E5701E1EE91C84005B0380 /* DelegateFeedbackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13E5701C1EE91C84005B0380 /* DelegateFeedbackView.xib */; };
 		261049BF185A472F1851656C /* Pods_ReactiveSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7087162DA26399A13DD621 /* Pods_ReactiveSample.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +37,12 @@
 		13CCC05C1EE916520039004D /* UIView+Embed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Embed.m"; sourceTree = "<group>"; };
 		13CCC05D1EE916520039004D /* UIView+NibFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NibFile.h"; sourceTree = "<group>"; };
 		13CCC05E1EE916520039004D /* UIView+NibFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NibFile.m"; sourceTree = "<group>"; };
+		13E570151EE91906005B0380 /* DelegateFeedbackContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateFeedbackContainerView.h; sourceTree = "<group>"; };
+		13E570161EE91906005B0380 /* DelegateFeedbackContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelegateFeedbackContainerView.m; sourceTree = "<group>"; };
+		13E570181EE91923005B0380 /* DelegateFeedbackContainerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DelegateFeedbackContainerView.xib; sourceTree = "<group>"; };
+		13E5701A1EE91C84005B0380 /* DelegateFeedbackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateFeedbackView.h; sourceTree = "<group>"; };
+		13E5701B1EE91C84005B0380 /* DelegateFeedbackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelegateFeedbackView.m; sourceTree = "<group>"; };
+		13E5701C1EE91C84005B0380 /* DelegateFeedbackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DelegateFeedbackView.xib; sourceTree = "<group>"; };
 		6B7087162DA26399A13DD621 /* Pods_ReactiveSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5A756ACC5A786D9F5605EFA /* Pods-ReactiveSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveSample/Pods-ReactiveSample.release.xcconfig"; sourceTree = "<group>"; };
 		A9A05AA7291A1144383B22E6 /* Pods-ReactiveSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveSample/Pods-ReactiveSample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -72,6 +82,8 @@
 		13CCC0421EE906C10039004D /* ReactiveSample */ = {
 			isa = PBXGroup;
 			children = (
+				13CCC0621EE9182A0039004D /* DelegateFeedback */,
+				13CCC0611EE9181B0039004D /* ReactiveFeedback */,
 				13CCC0461EE906C10039004D /* AppDelegate.h */,
 				13CCC0471EE906C10039004D /* AppDelegate.m */,
 				13CCC0491EE906C10039004D /* ViewController.h */,
@@ -102,6 +114,42 @@
 				13CCC05E1EE916520039004D /* UIView+NibFile.m */,
 			);
 			path = External;
+			sourceTree = "<group>";
+		};
+		13CCC0611EE9181B0039004D /* ReactiveFeedback */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ReactiveFeedback;
+			sourceTree = "<group>";
+		};
+		13CCC0621EE9182A0039004D /* DelegateFeedback */ = {
+			isa = PBXGroup;
+			children = (
+				13E570131EE9189C005B0380 /* DelegateFeedbackContainerView */,
+				13E570141EE918A4005B0380 /* DelegateFeedbackView */,
+			);
+			path = DelegateFeedback;
+			sourceTree = "<group>";
+		};
+		13E570131EE9189C005B0380 /* DelegateFeedbackContainerView */ = {
+			isa = PBXGroup;
+			children = (
+				13E570151EE91906005B0380 /* DelegateFeedbackContainerView.h */,
+				13E570161EE91906005B0380 /* DelegateFeedbackContainerView.m */,
+				13E570181EE91923005B0380 /* DelegateFeedbackContainerView.xib */,
+			);
+			path = DelegateFeedbackContainerView;
+			sourceTree = "<group>";
+		};
+		13E570141EE918A4005B0380 /* DelegateFeedbackView */ = {
+			isa = PBXGroup;
+			children = (
+				13E5701A1EE91C84005B0380 /* DelegateFeedbackView.h */,
+				13E5701B1EE91C84005B0380 /* DelegateFeedbackView.m */,
+				13E5701C1EE91C84005B0380 /* DelegateFeedbackView.xib */,
+			);
+			path = DelegateFeedbackView;
 			sourceTree = "<group>";
 		};
 		3B9B938B057FFD71C7A54CB0 /* Frameworks */ = {
@@ -182,6 +230,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13E5701E1EE91C84005B0380 /* DelegateFeedbackView.xib in Resources */,
+				13E570191EE91923005B0380 /* DelegateFeedbackContainerView.xib in Resources */,
 				13CCC0531EE906C10039004D /* LaunchScreen.storyboard in Resources */,
 				13CCC0501EE906C10039004D /* Assets.xcassets in Resources */,
 				13CCC04E1EE906C10039004D /* Main.storyboard in Resources */,
@@ -243,10 +293,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13E5701D1EE91C84005B0380 /* DelegateFeedbackView.m in Sources */,
 				13CCC04B1EE906C10039004D /* ViewController.m in Sources */,
 				13CCC0481EE906C10039004D /* AppDelegate.m in Sources */,
 				13CCC0601EE916520039004D /* UIView+NibFile.m in Sources */,
 				13CCC05F1EE916520039004D /* UIView+Embed.m in Sources */,
+				13E570171EE91906005B0380 /* DelegateFeedbackContainerView.m in Sources */,
 				13CCC0451EE906C10039004D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,6 +458,7 @@
 				13CCC0591EE906C10039004D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
