@@ -43,6 +43,7 @@
 		13E5701A1EE91C84005B0380 /* DelegateFeedbackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateFeedbackView.h; sourceTree = "<group>"; };
 		13E5701B1EE91C84005B0380 /* DelegateFeedbackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelegateFeedbackView.m; sourceTree = "<group>"; };
 		13E5701C1EE91C84005B0380 /* DelegateFeedbackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DelegateFeedbackView.xib; sourceTree = "<group>"; };
+		13E5701F1EE925AC005B0380 /* Localization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Localization.h; sourceTree = "<group>"; };
 		6B7087162DA26399A13DD621 /* Pods_ReactiveSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5A756ACC5A786D9F5605EFA /* Pods-ReactiveSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveSample/Pods-ReactiveSample.release.xcconfig"; sourceTree = "<group>"; };
 		A9A05AA7291A1144383B22E6 /* Pods-ReactiveSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveSample/Pods-ReactiveSample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -108,6 +109,7 @@
 		13CCC05A1EE916410039004D /* External */ = {
 			isa = PBXGroup;
 			children = (
+				13E5701F1EE925AC005B0380 /* Localization.h */,
 				13CCC05B1EE916520039004D /* UIView+Embed.h */,
 				13CCC05C1EE916520039004D /* UIView+Embed.m */,
 				13CCC05D1EE916520039004D /* UIView+NibFile.h */,
