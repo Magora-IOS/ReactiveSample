@@ -7,7 +7,7 @@
 #import "UIView+Embed.h"
 #import "UIView+NibFile.h"
 
-@interface DelegateFeedbackContainerView() <DelegateFeedbackViewDelegate>
+@interface DelegateFeedbackContainerView () <DelegateFeedbackViewDelegate>
 
 @property (nonatomic, strong) IBOutlet UILabel *titleLabel;
 
@@ -69,10 +69,9 @@
 }
 
 - (void)updateResult {
-    NSString *format = LS(@"Delegate.Result");
     self.titleLabel.text =
         [NSString
-            stringWithFormat:format,
+            stringWithFormat:LS(@"Delegate.Result"),
             @(self.feedbackOne.status),
             @(self.feedbackTwo.status),
             @(self.feedbackThree.status)];

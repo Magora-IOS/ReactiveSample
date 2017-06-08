@@ -20,6 +20,10 @@
 		13E5701D1EE91C84005B0380 /* DelegateFeedbackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E5701B1EE91C84005B0380 /* DelegateFeedbackView.m */; };
 		13E5701E1EE91C84005B0380 /* DelegateFeedbackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13E5701C1EE91C84005B0380 /* DelegateFeedbackView.xib */; };
 		13E570221EE92805005B0380 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 13E570201EE92805005B0380 /* Localizable.strings */; };
+		13E570281EE935BC005B0380 /* ReactiveFeedbackContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E570261EE935BC005B0380 /* ReactiveFeedbackContainerView.m */; };
+		13E570291EE935BC005B0380 /* ReactiveFeedbackContainerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13E570271EE935BC005B0380 /* ReactiveFeedbackContainerView.xib */; };
+		13E5702D1EE935C6005B0380 /* ReactiveFeedbackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E5702B1EE935C6005B0380 /* ReactiveFeedbackView.m */; };
+		13E5702E1EE935C6005B0380 /* ReactiveFeedbackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13E5702C1EE935C6005B0380 /* ReactiveFeedbackView.xib */; };
 		261049BF185A472F1851656C /* Pods_ReactiveSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7087162DA26399A13DD621 /* Pods_ReactiveSample.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +50,12 @@
 		13E5701C1EE91C84005B0380 /* DelegateFeedbackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DelegateFeedbackView.xib; sourceTree = "<group>"; };
 		13E5701F1EE925AC005B0380 /* Localization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Localization.h; sourceTree = "<group>"; };
 		13E570211EE92805005B0380 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		13E570251EE935BC005B0380 /* ReactiveFeedbackContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactiveFeedbackContainerView.h; sourceTree = "<group>"; };
+		13E570261EE935BC005B0380 /* ReactiveFeedbackContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactiveFeedbackContainerView.m; sourceTree = "<group>"; };
+		13E570271EE935BC005B0380 /* ReactiveFeedbackContainerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReactiveFeedbackContainerView.xib; sourceTree = "<group>"; };
+		13E5702A1EE935C6005B0380 /* ReactiveFeedbackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactiveFeedbackView.h; sourceTree = "<group>"; };
+		13E5702B1EE935C6005B0380 /* ReactiveFeedbackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactiveFeedbackView.m; sourceTree = "<group>"; };
+		13E5702C1EE935C6005B0380 /* ReactiveFeedbackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReactiveFeedbackView.xib; sourceTree = "<group>"; };
 		6B7087162DA26399A13DD621 /* Pods_ReactiveSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5A756ACC5A786D9F5605EFA /* Pods-ReactiveSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveSample/Pods-ReactiveSample.release.xcconfig"; sourceTree = "<group>"; };
 		A9A05AA7291A1144383B22E6 /* Pods-ReactiveSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveSample/Pods-ReactiveSample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +134,8 @@
 		13CCC0611EE9181B0039004D /* ReactiveFeedback */ = {
 			isa = PBXGroup;
 			children = (
+				13E570241EE935A5005B0380 /* ReactiveFeedbackContainerView */,
+				13E570231EE9359E005B0380 /* ReactiveFeedbackView */,
 			);
 			path = ReactiveFeedback;
 			sourceTree = "<group>";
@@ -155,6 +167,26 @@
 				13E5701C1EE91C84005B0380 /* DelegateFeedbackView.xib */,
 			);
 			path = DelegateFeedbackView;
+			sourceTree = "<group>";
+		};
+		13E570231EE9359E005B0380 /* ReactiveFeedbackView */ = {
+			isa = PBXGroup;
+			children = (
+				13E5702A1EE935C6005B0380 /* ReactiveFeedbackView.h */,
+				13E5702B1EE935C6005B0380 /* ReactiveFeedbackView.m */,
+				13E5702C1EE935C6005B0380 /* ReactiveFeedbackView.xib */,
+			);
+			path = ReactiveFeedbackView;
+			sourceTree = "<group>";
+		};
+		13E570241EE935A5005B0380 /* ReactiveFeedbackContainerView */ = {
+			isa = PBXGroup;
+			children = (
+				13E570251EE935BC005B0380 /* ReactiveFeedbackContainerView.h */,
+				13E570261EE935BC005B0380 /* ReactiveFeedbackContainerView.m */,
+				13E570271EE935BC005B0380 /* ReactiveFeedbackContainerView.xib */,
+			);
+			path = ReactiveFeedbackContainerView;
 			sourceTree = "<group>";
 		};
 		3B9B938B057FFD71C7A54CB0 /* Frameworks */ = {
@@ -237,7 +269,9 @@
 			files = (
 				13E5701E1EE91C84005B0380 /* DelegateFeedbackView.xib in Resources */,
 				13E570221EE92805005B0380 /* Localizable.strings in Resources */,
+				13E570291EE935BC005B0380 /* ReactiveFeedbackContainerView.xib in Resources */,
 				13E570191EE91923005B0380 /* DelegateFeedbackContainerView.xib in Resources */,
+				13E5702E1EE935C6005B0380 /* ReactiveFeedbackView.xib in Resources */,
 				13CCC0531EE906C10039004D /* LaunchScreen.storyboard in Resources */,
 				13CCC0501EE906C10039004D /* Assets.xcassets in Resources */,
 				13CCC04E1EE906C10039004D /* Main.storyboard in Resources */,
@@ -299,6 +333,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13E570281EE935BC005B0380 /* ReactiveFeedbackContainerView.m in Sources */,
+				13E5702D1EE935C6005B0380 /* ReactiveFeedbackView.m in Sources */,
 				13E5701D1EE91C84005B0380 /* DelegateFeedbackView.m in Sources */,
 				13CCC04B1EE906C10039004D /* ViewController.m in Sources */,
 				13CCC0481EE906C10039004D /* AppDelegate.m in Sources */,
