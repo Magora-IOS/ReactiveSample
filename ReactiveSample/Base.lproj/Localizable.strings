@@ -1,0 +1,15 @@
+
+"Feedback.One.Title" = "Would you like a cup of coffee?";
+"Feedback.One.Yes" = "Yes";
+"Feedback.One.No" = "No";
+
+"Feedback.Two.Title" = "May be you would like some tea?";
+"Feedback.Two.Yes" = "Yes";
+"Feedback.Two.No" = "No";
+
+"Feedback.Three.Title" = "You probably never read the questions, because now your kidneys are gone. Do you want them removed?";
+"Feedback.Three.Yes" = "Yes";
+"Feedback.Three.No" = "No";
+
+"Delegate.Result" = "DELEGATE (%@, %@, %@)";
+"Reactive.Result" = "REACTIVE (%@, %@, %@)";
