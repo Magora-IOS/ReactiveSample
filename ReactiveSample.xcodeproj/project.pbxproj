@@ -13,6 +13,9 @@
 		13CCC04E1EE906C10039004D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13CCC04C1EE906C10039004D /* Main.storyboard */; };
 		13CCC0501EE906C10039004D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13CCC04F1EE906C10039004D /* Assets.xcassets */; };
 		13CCC0531EE906C10039004D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13CCC0511EE906C10039004D /* LaunchScreen.storyboard */; };
+		13CCC05F1EE916520039004D /* UIView+Embed.m in Sources */ = {isa = PBXBuildFile; fileRef = 13CCC05C1EE916520039004D /* UIView+Embed.m */; };
+		13CCC0601EE916520039004D /* UIView+NibFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 13CCC05E1EE916520039004D /* UIView+NibFile.m */; };
+		261049BF185A472F1851656C /* Pods_ReactiveSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7087162DA26399A13DD621 /* Pods_ReactiveSample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,13 @@
 		13CCC04F1EE906C10039004D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13CCC0521EE906C10039004D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13CCC0541EE906C10039004D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13CCC05B1EE916520039004D /* UIView+Embed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Embed.h"; sourceTree = "<group>"; };
+		13CCC05C1EE916520039004D /* UIView+Embed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Embed.m"; sourceTree = "<group>"; };
+		13CCC05D1EE916520039004D /* UIView+NibFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NibFile.h"; sourceTree = "<group>"; };
+		13CCC05E1EE916520039004D /* UIView+NibFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NibFile.m"; sourceTree = "<group>"; };
+		6B7087162DA26399A13DD621 /* Pods_ReactiveSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5A756ACC5A786D9F5605EFA /* Pods-ReactiveSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveSample/Pods-ReactiveSample.release.xcconfig"; sourceTree = "<group>"; };
+		A9A05AA7291A1144383B22E6 /* Pods-ReactiveSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveSample/Pods-ReactiveSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				261049BF185A472F1851656C /* Pods_ReactiveSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +53,11 @@
 		13CCC0371EE906C10039004D = {
 			isa = PBXGroup;
 			children = (
+				13CCC05A1EE916410039004D /* External */,
 				13CCC0421EE906C10039004D /* ReactiveSample */,
 				13CCC0411EE906C10039004D /* Products */,
+				485A8AA35264734AC38CB4FE /* Pods */,
+				3B9B938B057FFD71C7A54CB0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +93,34 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		13CCC05A1EE916410039004D /* External */ = {
+			isa = PBXGroup;
+			children = (
+				13CCC05B1EE916520039004D /* UIView+Embed.h */,
+				13CCC05C1EE916520039004D /* UIView+Embed.m */,
+				13CCC05D1EE916520039004D /* UIView+NibFile.h */,
+				13CCC05E1EE916520039004D /* UIView+NibFile.m */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		3B9B938B057FFD71C7A54CB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B7087162DA26399A13DD621 /* Pods_ReactiveSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		485A8AA35264734AC38CB4FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9A05AA7291A1144383B22E6 /* Pods-ReactiveSample.debug.xcconfig */,
+				A5A756ACC5A786D9F5605EFA /* Pods-ReactiveSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +128,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13CCC0571EE906C10039004D /* Build configuration list for PBXNativeTarget "ReactiveSample" */;
 			buildPhases = (
+				1E2466F222218A656C86B455 /* [CP] Check Pods Manifest.lock */,
 				13CCC03C1EE906C10039004D /* Sources */,
 				13CCC03D1EE906C10039004D /* Frameworks */,
 				13CCC03E1EE906C10039004D /* Resources */,
+				6184A6AA826369C26D3606BE /* [CP] Embed Pods Frameworks */,
+				FB26C3C977D1DC2CA332606E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,6 +190,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1E2466F222218A656C86B455 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6184A6AA826369C26D3606BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactiveSample/Pods-ReactiveSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB26C3C977D1DC2CA332606E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactiveSample/Pods-ReactiveSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		13CCC03C1EE906C10039004D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -152,6 +245,8 @@
 			files = (
 				13CCC04B1EE906C10039004D /* ViewController.m in Sources */,
 				13CCC0481EE906C10039004D /* AppDelegate.m in Sources */,
+				13CCC0601EE916520039004D /* UIView+NibFile.m in Sources */,
+				13CCC05F1EE916520039004D /* UIView+Embed.m in Sources */,
 				13CCC0451EE906C10039004D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +365,7 @@
 		};
 		13CCC0581EE906C10039004D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9A05AA7291A1144383B22E6 /* Pods-ReactiveSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ReactiveSample/Info.plist;
@@ -281,6 +377,7 @@
 		};
 		13CCC0591EE906C10039004D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5A756ACC5A786D9F5605EFA /* Pods-ReactiveSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ReactiveSample/Info.plist;

@@ -1,29 +1,27 @@
-//
-//  ViewController.m
-//  ReactiveSample
-//
-//  Created by Michael Kapelko on 08/06/17.
-//  Copyright © 2017 Magora. All rights reserved.
-//
 
 #import "ViewController.h"
 
 @interface ViewController ()
 
+@property (nonatomic, strong) IBOutlet UIView *delegateContainerView;
+@property (nonatomic, strong) IBOutlet UIView *reactiveContainerView;
+
 @end
 
 @implementation ViewController
 
+#pragma mark - PUBLIC
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self setupViewController];
 }
 
+#pragma mark - PRIVATE
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setupViewController {
+
 }
-
 
 @end
+
