@@ -1,8 +1,8 @@
 Overview
 ========
 
-Reactive programming is a pretty novel concept to OOP people, but it existed for ages.
+ReactiveSample application uses several instances of FeedbackView.
 
-Here we compare sample FeedbackView implementation in a standard delegate way and
-reactive way.
+FeedbackView is similar to UISwitch, but FeedbackView has no state initially.
 
+See a preview below.
