@@ -38,7 +38,6 @@
     // One.
     self.feedbackOne = [ReactiveFeedbackView loadFromNib];
     [self.feedbackOneContainerView embedView:self.feedbackOne];
-
     self.feedbackOne.title = LS(@"Feedback.One.Title");
     self.feedbackOne.acceptTitle = LS(@"Feedback.One.Yes");
     self.feedbackOne.declineTitle = LS(@"Feedback.One.No");
@@ -46,7 +45,6 @@
     // Two.
     self.feedbackTwo = [ReactiveFeedbackView loadFromNib];
     [self.feedbackTwoContainerView embedView:self.feedbackTwo];
-
     self.feedbackTwo.title = LS(@"Feedback.Two.Title");
     self.feedbackTwo.acceptTitle = LS(@"Feedback.Two.Yes");
     self.feedbackTwo.declineTitle = LS(@"Feedback.Two.No");
@@ -54,7 +52,6 @@
     // Three.
     self.feedbackThree = [ReactiveFeedbackView loadFromNib];
     [self.feedbackThreeContainerView embedView:self.feedbackThree];
-
     self.feedbackThree.title = LS(@"Feedback.Three.Title");
     self.feedbackThree.acceptTitle = LS(@"Feedback.Three.Yes");
     self.feedbackThree.declineTitle = LS(@"Feedback.Three.No");
