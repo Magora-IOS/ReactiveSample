@@ -2,8 +2,6 @@
 
 Title, DelegateFeedbackView intances, and containers.
 
-**Note** the `<DelegateFeedbackViewDelegate>`.
-
 ```objc
 @interface DelegateFeedbackContainerView () <DelegateFeedbackViewDelegate>
 
@@ -20,4 +18,6 @@ Title, DelegateFeedbackView intances, and containers.
 
 @end
 ```
+
+**Note** the `<DelegateFeedbackViewDelegate>`.
 
