@@ -1,4 +1,4 @@
-#### DFV header
+#### DFV declaration
 
 Feedback view configuration (three titles) and reporting (status + delegate).
 
