@@ -6,7 +6,6 @@
 - (void)setupDelegateFeedbackContainerView {
     - - - -
     [self updateResult];
-    - - - -
 }
 ```
 

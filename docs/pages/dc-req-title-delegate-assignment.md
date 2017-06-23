@@ -1,6 +1,6 @@
 #### DC title requirements: delegate assignment
 
-3\. Assigning DC as the delegate to receive notifications (as many times, as there are components).
+3\. Assigning DC as the delegate to receive notifications.
 
 ```objc
     - - - -
@@ -11,4 +11,4 @@
     self.feedbackThree.delegate = self;
     - - - -
 ```
-
+As many times, as there are components.
