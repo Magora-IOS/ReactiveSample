@@ -1,6 +1,7 @@
-## VC properties
+#### VC properties
 
-Container views and embedded views.
+Containers and their child views.
+
 ```objc
 @interface ViewController ()
 

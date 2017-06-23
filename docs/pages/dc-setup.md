@@ -1,4 +1,4 @@
-## DC setup
+#### DC setup
 
 Instantiate and setup feedback views, reset title label.
 

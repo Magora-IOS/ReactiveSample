@@ -1,8 +1,8 @@
-## DC includes
+#### DC includes
 
-DelegateFeedbackView,
-localization macro (simple wrapper around NSLocalizedString),
-and UIView embedding categories.
+* DelegateFeedbackView
+* localization macro (shorten NSLocalizedString)
+* UIView embedding categories
 
 ```objc
 #import "DelegateFeedbackContainerView.h"

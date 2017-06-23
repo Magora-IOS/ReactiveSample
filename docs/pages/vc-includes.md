@@ -1,6 +1,7 @@
-## VC includes
+#### VC includes
 
-Container views and UIView categories to embed views.
+Containers and UIView categories to embed views.
+
 ```objc
 #import "ViewController.h"
 

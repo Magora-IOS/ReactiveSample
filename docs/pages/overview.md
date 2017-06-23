@@ -1,5 +1,4 @@
-Overview
-========
+### Overview
 
 ReactiveSample application uses several instances of FeedbackView.
 

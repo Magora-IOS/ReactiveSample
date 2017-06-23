@@ -1,5 +1,4 @@
-Comparison
-==========
+### Comparison
 
 We compare two FeedbackView implementations:
 * the first one uses delegates

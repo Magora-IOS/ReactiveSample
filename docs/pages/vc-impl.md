@@ -1,4 +1,6 @@
-## VC implementation
+#### VC implementation
+
+Embed delegate and reactive containers into VC.
 
 ```objc
 @implementation ViewController
