@@ -1,6 +1,6 @@
 #### RFV declaration
 
-Feedback view configuration and reporting. Similar to DFV's one.
+Feedback view configuration and reporting.
 
 ```objc
 @interface ReactiveFeedbackView : UIView
