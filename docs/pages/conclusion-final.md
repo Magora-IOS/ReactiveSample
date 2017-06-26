@@ -1,4 +1,4 @@
-### Conclusion
+#### Conclusion: reactive approach
 
 0. Saves human time
 

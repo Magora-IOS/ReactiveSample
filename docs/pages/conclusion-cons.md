@@ -1,4 +1,4 @@
-### Drawbacks
+#### Conclusion: drawbacks
 
 Reactive approach has drawbacks that stem from ReactiveObjC implementation:
 0. RAC functions unwrap to dozens of function calls, which is more CPU intensive

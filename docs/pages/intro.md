@@ -1,4 +1,4 @@
-# Reactive Sample
+# Reactive approach
 
 Objective-C is a great language. ReactiveObjC is a great framework.
 
