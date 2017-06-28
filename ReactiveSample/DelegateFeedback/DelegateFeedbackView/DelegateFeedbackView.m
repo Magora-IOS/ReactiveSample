@@ -1,6 +1,8 @@
 
 #import "DelegateFeedbackView.h"
 
+#define MEASURE_DURATION
+
 @interface DelegateFeedbackView ()
 
 @property (nonatomic, assign, readwrite) DelegateFeedbackViewStatus status;
@@ -54,17 +56,31 @@
 }
 
 - (IBAction)accept:(id)sender {
+#ifdef MEASURE_DURATION
+    CFTimeInterval dtWas = CACurrentMediaTime();
+#endif
     self.status = DelegateFeedbackViewStatusAccept;
     [self updateAcceptDeclineImages];
     [self updateValidityImage];
     [self reportStatus];
+#ifdef MEASURE_DURATION
+    CFTimeInterval dtNow = CACurrentMediaTime();
+    NSLog(@"DelegateFeedbackView. Accept duration: '%@'", @(dtNow - dtWas));
+#endif
 }
 
 - (IBAction)decline:(id)sender {
+#ifdef MEASURE_DURATION
+    CFTimeInterval dtWas = CACurrentMediaTime();
+#endif
     self.status = DelegateFeedbackViewStatusDecline;
     [self updateAcceptDeclineImages];
     [self updateValidityImage];
     [self reportStatus];
+#ifdef MEASURE_DURATION
+    CFTimeInterval dtNow = CACurrentMediaTime();
+    NSLog(@"DelegateFeedbackView. Decline duration: '%@'", @(dtNow - dtWas));
+#endif
 }
 
 - (void)reportStatus {
