@@ -1,5 +1,5 @@
 
-#import "ViewController.h"
+#import "ThreeFeedbacksVC.h"
 
 #import "DelegateFeedbackContainerView.h"
 #import "ReactiveFeedbackContainerView.h"
@@ -7,7 +7,7 @@
 #import "UIView+Embed.h"
 #import "UIView+NibFile.h"
 
-@interface ViewController ()
+@interface ThreeFeedbacksVC ()
 
 @property (nonatomic, strong) IBOutlet UIView *delegateContainerView;
 @property (nonatomic, strong) DelegateFeedbackContainerView *delegateFeedback;
@@ -17,18 +17,18 @@
 
 @end
 
-@implementation ViewController
+@implementation ThreeFeedbacksVC
 
 #pragma mark - PUBLIC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setupViewController];
+    [self setupThreeFeedbacksVC];
 }
 
 #pragma mark - PRIVATE
 
-- (void)setupViewController {
+- (void)setupThreeFeedbacksVC {
     self.delegateFeedback = [DelegateFeedbackContainerView loadFromNib];
     [self.delegateContainerView embedView:self.delegateFeedback];
 

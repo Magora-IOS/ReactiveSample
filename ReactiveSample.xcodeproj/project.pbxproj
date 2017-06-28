@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		135DDDD31F037A9D00436432 /* ThreeFeedbacksVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 135DDDD21F037A9D00436432 /* ThreeFeedbacksVC.m */; };
 		13CCC0451EE906C10039004D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13CCC0441EE906C10039004D /* main.m */; };
 		13CCC0481EE906C10039004D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13CCC0471EE906C10039004D /* AppDelegate.m */; };
-		13CCC04B1EE906C10039004D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13CCC04A1EE906C10039004D /* ViewController.m */; };
 		13CCC04E1EE906C10039004D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13CCC04C1EE906C10039004D /* Main.storyboard */; };
 		13CCC0501EE906C10039004D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13CCC04F1EE906C10039004D /* Assets.xcassets */; };
 		13CCC0531EE906C10039004D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13CCC0511EE906C10039004D /* LaunchScreen.storyboard */; };
@@ -28,12 +28,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		135DDDD11F037A9D00436432 /* ThreeFeedbacksVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeFeedbacksVC.h; sourceTree = "<group>"; };
+		135DDDD21F037A9D00436432 /* ThreeFeedbacksVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeFeedbacksVC.m; sourceTree = "<group>"; };
 		13CCC0401EE906C10039004D /* ReactiveSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13CCC0441EE906C10039004D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		13CCC0461EE906C10039004D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		13CCC0471EE906C10039004D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		13CCC0491EE906C10039004D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		13CCC04A1EE906C10039004D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		13CCC04D1EE906C10039004D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13CCC04F1EE906C10039004D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13CCC0521EE906C10039004D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -73,6 +73,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		135DDDD01F037A8800436432 /* ThreeFeedbacksVC */ = {
+			isa = PBXGroup;
+			children = (
+				135DDDD11F037A9D00436432 /* ThreeFeedbacksVC.h */,
+				135DDDD21F037A9D00436432 /* ThreeFeedbacksVC.m */,
+			);
+			path = ThreeFeedbacksVC;
+			sourceTree = "<group>";
+		};
 		13CCC0371EE906C10039004D = {
 			isa = PBXGroup;
 			children = (
@@ -97,10 +106,9 @@
 			children = (
 				13CCC0621EE9182A0039004D /* DelegateFeedback */,
 				13CCC0611EE9181B0039004D /* ReactiveFeedback */,
+				135DDDD01F037A8800436432 /* ThreeFeedbacksVC */,
 				13CCC0461EE906C10039004D /* AppDelegate.h */,
 				13CCC0471EE906C10039004D /* AppDelegate.m */,
-				13CCC0491EE906C10039004D /* ViewController.h */,
-				13CCC04A1EE906C10039004D /* ViewController.m */,
 				13CCC04C1EE906C10039004D /* Main.storyboard */,
 				13CCC04F1EE906C10039004D /* Assets.xcassets */,
 				13CCC0511EE906C10039004D /* LaunchScreen.storyboard */,
@@ -336,7 +344,7 @@
 				13E570281EE935BC005B0380 /* ReactiveFeedbackContainerView.m in Sources */,
 				13E5702D1EE935C6005B0380 /* ReactiveFeedbackView.m in Sources */,
 				13E5701D1EE91C84005B0380 /* DelegateFeedbackView.m in Sources */,
-				13CCC04B1EE906C10039004D /* ViewController.m in Sources */,
+				135DDDD31F037A9D00436432 /* ThreeFeedbacksVC.m in Sources */,
 				13CCC0481EE906C10039004D /* AppDelegate.m in Sources */,
 				13CCC0601EE916520039004D /* UIView+NibFile.m in Sources */,
 				13CCC05F1EE916520039004D /* UIView+Embed.m in Sources */,

@@ -29,7 +29,7 @@
         <!--3+3 feedbacks-->
         <scene sceneID="AFK-Cx-wXi">
             <objects>
-                <viewController id="NKY-wf-y42" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="NKY-wf-y42" customClass="ThreeFeedbacksVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="V7I-Zs-iqE"/>
                         <viewControllerLayoutGuide type="bottom" id="fRD-Qb-Aoa"/>
@@ -90,9 +90,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5jf-x1-Aj6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="958" y="216"/>
+            <point key="canvasLocation" x="1038" y="-507"/>
         </scene>
-        <!--Menu-->
+        <!--Reactive sample-->
         <scene sceneID="Vpl-FR-6YW">
             <objects>
                 <viewController id="cvx-gS-8La" sceneMemberID="viewController">
@@ -111,19 +111,101 @@
                                     <segue destination="NKY-wf-y42" kind="show" id="aLC-Dv-ezN"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fB7-8A-Rne">
+                                <rect key="frame" x="36" y="144" width="303" height="30"/>
+                                <state key="normal" title="Delegate cells"/>
+                                <connections>
+                                    <segue destination="jba-3J-Xoc" kind="show" id="eeF-XL-hSV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxF-SH-bBq">
+                                <rect key="frame" x="36" y="194" width="303" height="30"/>
+                                <state key="normal" title="Reactive cells"/>
+                                <connections>
+                                    <segue destination="9Zu-wd-MRh" kind="show" id="6ab-rr-mEm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="7K6-HR-Ebs" firstAttribute="top" secondItem="k83-Pd-fhd" secondAttribute="bottom" constant="30" id="M1k-H3-QgV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fB7-8A-Rne" secondAttribute="trailing" constant="20" id="291-XW-dy5"/>
+                            <constraint firstItem="hxF-SH-bBq" firstAttribute="top" secondItem="fB7-8A-Rne" secondAttribute="bottom" constant="20" id="2gc-81-1Qp"/>
+                            <constraint firstItem="7K6-HR-Ebs" firstAttribute="top" secondItem="k83-Pd-fhd" secondAttribute="bottom" constant="30" id="QJG-IX-XxU"/>
+                            <constraint firstItem="fB7-8A-Rne" firstAttribute="top" secondItem="7K6-HR-Ebs" secondAttribute="bottom" constant="20" id="VKV-Wv-PZP"/>
                             <constraint firstItem="7K6-HR-Ebs" firstAttribute="leading" secondItem="Pld-6q-48B" secondAttribute="leadingMargin" constant="20" id="cE5-Ha-0nw"/>
                             <constraint firstAttribute="trailingMargin" secondItem="7K6-HR-Ebs" secondAttribute="trailing" constant="20" id="h6p-GV-abq"/>
+                            <constraint firstItem="hxF-SH-bBq" firstAttribute="leading" secondItem="Pld-6q-48B" secondAttribute="leadingMargin" constant="20" id="oce-kb-Keq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hxF-SH-bBq" secondAttribute="trailing" constant="20" id="uDn-ir-ldb"/>
+                            <constraint firstItem="fB7-8A-Rne" firstAttribute="leading" secondItem="Pld-6q-48B" secondAttribute="leadingMargin" constant="20" id="yrV-5d-m3M"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Menu" id="nFI-0X-NfN"/>
+                    <navigationItem key="navigationItem" title="Reactive sample" id="nFI-0X-NfN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t3T-dx-bAk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="50" y="215"/>
+            <point key="canvasLocation" x="49" y="217"/>
+        </scene>
+        <!--Delegate cells-->
+        <scene sceneID="U9N-q4-YHp">
+            <objects>
+                <viewController id="jba-3J-Xoc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xFR-Pf-Xkv"/>
+                        <viewControllerLayoutGuide type="bottom" id="cRk-kE-24q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gg5-64-3H4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3IE-hc-NAF">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3IE-hc-NAF" firstAttribute="leading" secondItem="Gg5-64-3H4" secondAttribute="leading" id="1UI-iC-8ag"/>
+                            <constraint firstAttribute="trailing" secondItem="3IE-hc-NAF" secondAttribute="trailing" id="DZh-Ss-z0u"/>
+                            <constraint firstItem="3IE-hc-NAF" firstAttribute="top" secondItem="xFR-Pf-Xkv" secondAttribute="bottom" id="PPn-nt-MeL"/>
+                            <constraint firstItem="cRk-kE-24q" firstAttribute="top" secondItem="3IE-hc-NAF" secondAttribute="bottom" id="uV5-A4-eix"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Delegate cells" id="aKG-2w-2Z4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xH6-9H-BcT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1038" y="216"/>
+        </scene>
+        <!--Reactive cells-->
+        <scene sceneID="LG5-t5-EEu">
+            <objects>
+                <viewController id="9Zu-wd-MRh" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ihc-jk-7m2"/>
+                        <viewControllerLayoutGuide type="bottom" id="wcO-RH-bK5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KON-7l-VnG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Tj-2b-d9N">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1Tj-2b-d9N" secondAttribute="trailing" id="dpa-Xy-739"/>
+                            <constraint firstItem="wcO-RH-bK5" firstAttribute="top" secondItem="1Tj-2b-d9N" secondAttribute="bottom" id="i5P-fz-N4x"/>
+                            <constraint firstItem="1Tj-2b-d9N" firstAttribute="top" secondItem="Ihc-jk-7m2" secondAttribute="bottom" id="sRd-J4-0jL"/>
+                            <constraint firstItem="1Tj-2b-d9N" firstAttribute="leading" secondItem="KON-7l-VnG" secondAttribute="leading" id="vFN-WM-aDR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Reactive cells" id="XGE-mJ-FuR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cSu-Uh-hrp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1038" y="941"/>
         </scene>
     </scenes>
 </document>
