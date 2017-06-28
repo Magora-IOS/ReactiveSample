@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		135DDDD31F037A9D00436432 /* ThreeFeedbacksVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 135DDDD21F037A9D00436432 /* ThreeFeedbacksVC.m */; };
+		135DDDD71F037C5000436432 /* DelegateCellsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 135DDDD61F037C5000436432 /* DelegateCellsVC.m */; };
+		135DDDDC1F037E4100436432 /* DelegateCellsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 135DDDDA1F037E4100436432 /* DelegateCellsView.m */; };
+		135DDDDD1F037E4100436432 /* DelegateCellsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 135DDDDB1F037E4100436432 /* DelegateCellsView.xib */; };
+		135DDDE11F03805E00436432 /* DelegateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 135DDDDF1F03805E00436432 /* DelegateCell.m */; };
+		135DDDE21F03805E00436432 /* DelegateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 135DDDE01F03805E00436432 /* DelegateCell.xib */; };
+		135DDDE61F0383C800436432 /* CellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 135DDDE51F0383C800436432 /* CellItem.m */; };
 		13CCC0451EE906C10039004D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13CCC0441EE906C10039004D /* main.m */; };
 		13CCC0481EE906C10039004D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13CCC0471EE906C10039004D /* AppDelegate.m */; };
 		13CCC04E1EE906C10039004D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13CCC04C1EE906C10039004D /* Main.storyboard */; };
@@ -30,6 +36,16 @@
 /* Begin PBXFileReference section */
 		135DDDD11F037A9D00436432 /* ThreeFeedbacksVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeFeedbacksVC.h; sourceTree = "<group>"; };
 		135DDDD21F037A9D00436432 /* ThreeFeedbacksVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeFeedbacksVC.m; sourceTree = "<group>"; };
+		135DDDD51F037C5000436432 /* DelegateCellsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateCellsVC.h; sourceTree = "<group>"; };
+		135DDDD61F037C5000436432 /* DelegateCellsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelegateCellsVC.m; sourceTree = "<group>"; };
+		135DDDD91F037E4100436432 /* DelegateCellsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateCellsView.h; sourceTree = "<group>"; };
+		135DDDDA1F037E4100436432 /* DelegateCellsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelegateCellsView.m; sourceTree = "<group>"; };
+		135DDDDB1F037E4100436432 /* DelegateCellsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DelegateCellsView.xib; sourceTree = "<group>"; };
+		135DDDDE1F03805E00436432 /* DelegateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateCell.h; sourceTree = "<group>"; };
+		135DDDDF1F03805E00436432 /* DelegateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelegateCell.m; sourceTree = "<group>"; };
+		135DDDE01F03805E00436432 /* DelegateCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DelegateCell.xib; sourceTree = "<group>"; };
+		135DDDE41F0383C800436432 /* CellItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellItem.h; sourceTree = "<group>"; };
+		135DDDE51F0383C800436432 /* CellItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellItem.m; sourceTree = "<group>"; };
 		13CCC0401EE906C10039004D /* ReactiveSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13CCC0441EE906C10039004D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		13CCC0461EE906C10039004D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -82,6 +98,37 @@
 			path = ThreeFeedbacksVC;
 			sourceTree = "<group>";
 		};
+		135DDDD41F037C3600436432 /* DelegateCellsVC */ = {
+			isa = PBXGroup;
+			children = (
+				135DDDD51F037C5000436432 /* DelegateCellsVC.h */,
+				135DDDD61F037C5000436432 /* DelegateCellsVC.m */,
+			);
+			path = DelegateCellsVC;
+			sourceTree = "<group>";
+		};
+		135DDDD81F037E2E00436432 /* DelegateCellsView */ = {
+			isa = PBXGroup;
+			children = (
+				135DDDDE1F03805E00436432 /* DelegateCell.h */,
+				135DDDDF1F03805E00436432 /* DelegateCell.m */,
+				135DDDE01F03805E00436432 /* DelegateCell.xib */,
+				135DDDD91F037E4100436432 /* DelegateCellsView.h */,
+				135DDDDA1F037E4100436432 /* DelegateCellsView.m */,
+				135DDDDB1F037E4100436432 /* DelegateCellsView.xib */,
+			);
+			path = DelegateCellsView;
+			sourceTree = "<group>";
+		};
+		135DDDE31F0383AF00436432 /* CellItem */ = {
+			isa = PBXGroup;
+			children = (
+				135DDDE41F0383C800436432 /* CellItem.h */,
+				135DDDE51F0383C800436432 /* CellItem.m */,
+			);
+			path = CellItem;
+			sourceTree = "<group>";
+		};
 		13CCC0371EE906C10039004D = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +151,9 @@
 		13CCC0421EE906C10039004D /* ReactiveSample */ = {
 			isa = PBXGroup;
 			children = (
+				135DDDE31F0383AF00436432 /* CellItem */,
+				135DDDD81F037E2E00436432 /* DelegateCellsView */,
+				135DDDD41F037C3600436432 /* DelegateCellsVC */,
 				13CCC0621EE9182A0039004D /* DelegateFeedback */,
 				13CCC0611EE9181B0039004D /* ReactiveFeedback */,
 				135DDDD01F037A8800436432 /* ThreeFeedbacksVC */,
@@ -278,6 +328,8 @@
 				13E5701E1EE91C84005B0380 /* DelegateFeedbackView.xib in Resources */,
 				13E570221EE92805005B0380 /* Localizable.strings in Resources */,
 				13E570291EE935BC005B0380 /* ReactiveFeedbackContainerView.xib in Resources */,
+				135DDDDD1F037E4100436432 /* DelegateCellsView.xib in Resources */,
+				135DDDE21F03805E00436432 /* DelegateCell.xib in Resources */,
 				13E570191EE91923005B0380 /* DelegateFeedbackContainerView.xib in Resources */,
 				13E5702E1EE935C6005B0380 /* ReactiveFeedbackView.xib in Resources */,
 				13CCC0531EE906C10039004D /* LaunchScreen.storyboard in Resources */,
@@ -344,9 +396,13 @@
 				13E570281EE935BC005B0380 /* ReactiveFeedbackContainerView.m in Sources */,
 				13E5702D1EE935C6005B0380 /* ReactiveFeedbackView.m in Sources */,
 				13E5701D1EE91C84005B0380 /* DelegateFeedbackView.m in Sources */,
+				135DDDE61F0383C800436432 /* CellItem.m in Sources */,
+				135DDDDC1F037E4100436432 /* DelegateCellsView.m in Sources */,
+				135DDDD71F037C5000436432 /* DelegateCellsVC.m in Sources */,
 				135DDDD31F037A9D00436432 /* ThreeFeedbacksVC.m in Sources */,
 				13CCC0481EE906C10039004D /* AppDelegate.m in Sources */,
 				13CCC0601EE916520039004D /* UIView+NibFile.m in Sources */,
+				135DDDE11F03805E00436432 /* DelegateCell.m in Sources */,
 				13CCC05F1EE916520039004D /* UIView+Embed.m in Sources */,
 				13E570171EE91906005B0380 /* DelegateFeedbackContainerView.m in Sources */,
 				13CCC0451EE906C10039004D /* main.m in Sources */,

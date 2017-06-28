@@ -148,7 +148,7 @@
         <!--Delegate cells-->
         <scene sceneID="U9N-q4-YHp">
             <objects>
-                <viewController id="jba-3J-Xoc" sceneMemberID="viewController">
+                <viewController id="jba-3J-Xoc" customClass="DelegateCellsVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xFR-Pf-Xkv"/>
                         <viewControllerLayoutGuide type="bottom" id="cRk-kE-24q"/>
@@ -158,7 +158,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3IE-hc-NAF">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -166,11 +166,14 @@
                         <constraints>
                             <constraint firstItem="3IE-hc-NAF" firstAttribute="leading" secondItem="Gg5-64-3H4" secondAttribute="leading" id="1UI-iC-8ag"/>
                             <constraint firstAttribute="trailing" secondItem="3IE-hc-NAF" secondAttribute="trailing" id="DZh-Ss-z0u"/>
-                            <constraint firstItem="3IE-hc-NAF" firstAttribute="top" secondItem="xFR-Pf-Xkv" secondAttribute="bottom" id="PPn-nt-MeL"/>
+                            <constraint firstItem="3IE-hc-NAF" firstAttribute="top" secondItem="Gg5-64-3H4" secondAttribute="top" id="suY-Yf-QFu"/>
                             <constraint firstItem="cRk-kE-24q" firstAttribute="top" secondItem="3IE-hc-NAF" secondAttribute="bottom" id="uV5-A4-eix"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Delegate cells" id="aKG-2w-2Z4"/>
+                    <connections>
+                        <outlet property="containerView" destination="3IE-hc-NAF" id="1Nv-Ci-z7Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xH6-9H-BcT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -189,15 +192,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Tj-2b-d9N">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="1Tj-2b-d9N" firstAttribute="top" secondItem="KON-7l-VnG" secondAttribute="top" id="BYK-wU-nje"/>
                             <constraint firstAttribute="trailing" secondItem="1Tj-2b-d9N" secondAttribute="trailing" id="dpa-Xy-739"/>
                             <constraint firstItem="wcO-RH-bK5" firstAttribute="top" secondItem="1Tj-2b-d9N" secondAttribute="bottom" id="i5P-fz-N4x"/>
-                            <constraint firstItem="1Tj-2b-d9N" firstAttribute="top" secondItem="Ihc-jk-7m2" secondAttribute="bottom" id="sRd-J4-0jL"/>
                             <constraint firstItem="1Tj-2b-d9N" firstAttribute="leading" secondItem="KON-7l-VnG" secondAttribute="leading" id="vFN-WM-aDR"/>
                         </constraints>
                     </view>
