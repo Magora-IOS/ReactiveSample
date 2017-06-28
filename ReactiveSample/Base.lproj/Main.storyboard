@@ -182,7 +182,7 @@
         <!--Reactive cells-->
         <scene sceneID="LG5-t5-EEu">
             <objects>
-                <viewController id="9Zu-wd-MRh" sceneMemberID="viewController">
+                <viewController id="9Zu-wd-MRh" customClass="ReactiveCellsVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ihc-jk-7m2"/>
                         <viewControllerLayoutGuide type="bottom" id="wcO-RH-bK5"/>
@@ -205,6 +205,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Reactive cells" id="XGE-mJ-FuR"/>
+                    <connections>
+                        <outlet property="containerView" destination="1Tj-2b-d9N" id="KqV-q0-b17"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cSu-Uh-hrp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -1,25 +1,27 @@
 
-#import "DelegateCellsView.h"
+#import "ReactiveCellsView.h"
 
-#import "DelegateCell.h"
+#import "ReactiveCell.h"
 
-static NSString * const kDelegateCellsViewCell = @"DelegateCell";
-static CGFloat const kDelegateCellsViewCellHeight = 90;
+#import <ReactiveObjC/ReactiveObjC.h>
 
-@interface DelegateCellsView () <UICollectionViewDataSource>
+static NSString * const kReactiveCellsViewCell = @"ReactiveCell";
+static CGFloat const kReactiveCellsViewCellHeight = 90;
+
+@interface ReactiveCellsView () <UICollectionViewDataSource>
 
 @property (nonatomic, strong) IBOutlet UICollectionView *collectionView;
 @property (nonatomic, strong) UICollectionViewFlowLayout *collectionViewLayout;
 
 @end
 
-@implementation DelegateCellsView
+@implementation ReactiveCellsView
 
 #pragma mark - PUBLIC
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    [self setupDelegateCellsView];
+    [self setupReactiveCellsView];
 }
 
 - (void)layoutSubviews {
@@ -27,23 +29,10 @@ static CGFloat const kDelegateCellsViewCellHeight = 90;
     self.collectionViewLayout.itemSize =
         CGSizeMake(
             self.collectionView.frame.size.width,
-            kDelegateCellsViewCellHeight);
-}
-
-#pragma mark - SETTERS
-
-- (void)setItems:(NSArray *)items {
-    _items = items;
-    [self refreshCollectionView];
+            kReactiveCellsViewCellHeight);
 }
 
 #pragma mark - PRIVATE
-
-- (void)refreshCollectionView {
-    if (self.collectionView) {
-        [self.collectionView reloadData];
-    }
-}
 
 - (void)setupCollectionView {
     // Configure collection view layout.
@@ -58,20 +47,31 @@ static CGFloat const kDelegateCellsViewCellHeight = 90;
     self.collectionView.allowsSelection = NO;
     // Register cells.
     [self.collectionView
-        registerNib:[UINib nibWithNibName:kDelegateCellsViewCell bundle:[NSBundle mainBundle]]
-        forCellWithReuseIdentifier:kDelegateCellsViewCell];
+        registerNib:[UINib nibWithNibName:kReactiveCellsViewCell bundle:[NSBundle mainBundle]]
+        forCellWithReuseIdentifier:kReactiveCellsViewCell];
 }
 
-- (void)setupDelegateCellsView {
+- (void)setupReactiveCellsView {
     [self setupCollectionView];
+    [self setupItems];
+}
+
+- (void)setupItems {
+    @weakify(self);
+    // Refresh collection view.
+    [RACObserve(self, items)
+        subscribeNext:^(id x) {
+            @strongify(self);
+            [self.collectionView reloadData];
+        }];
 }
 
 #pragma mark - DELEGATE
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)cv
     cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    DelegateCell *cell =
-        [cv dequeueReusableCellWithReuseIdentifier:kDelegateCellsViewCell
+    ReactiveCell *cell =
+        [cv dequeueReusableCellWithReuseIdentifier:kReactiveCellsViewCell
             forIndexPath:indexPath];
     // Data.
     CellItem *item = self.items[indexPath.row];
@@ -82,6 +82,7 @@ static CGFloat const kDelegateCellsViewCellHeight = 90;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)cv numberOfItemsInSection:(NSInteger)section {
+    NSLog(@"R. Items count: '%@'", @([self.items count]));
     return [self.items count];
 }
 

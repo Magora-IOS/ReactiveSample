@@ -14,6 +14,11 @@
 		135DDDE11F03805E00436432 /* DelegateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 135DDDDF1F03805E00436432 /* DelegateCell.m */; };
 		135DDDE21F03805E00436432 /* DelegateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 135DDDE01F03805E00436432 /* DelegateCell.xib */; };
 		135DDDE61F0383C800436432 /* CellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 135DDDE51F0383C800436432 /* CellItem.m */; };
+		135DDDEA1F03929B00436432 /* ReactiveCellsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 135DDDE91F03929B00436432 /* ReactiveCellsVC.m */; };
+		135DDDF21F0392F400436432 /* ReactiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 135DDDED1F0392F400436432 /* ReactiveCell.m */; };
+		135DDDF31F0392F400436432 /* ReactiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 135DDDEE1F0392F400436432 /* ReactiveCell.xib */; };
+		135DDDF41F0392F400436432 /* ReactiveCellsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 135DDDF01F0392F400436432 /* ReactiveCellsView.m */; };
+		135DDDF51F0392F400436432 /* ReactiveCellsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 135DDDF11F0392F400436432 /* ReactiveCellsView.xib */; };
 		13CCC0451EE906C10039004D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13CCC0441EE906C10039004D /* main.m */; };
 		13CCC0481EE906C10039004D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13CCC0471EE906C10039004D /* AppDelegate.m */; };
 		13CCC04E1EE906C10039004D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13CCC04C1EE906C10039004D /* Main.storyboard */; };
@@ -46,6 +51,14 @@
 		135DDDE01F03805E00436432 /* DelegateCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DelegateCell.xib; sourceTree = "<group>"; };
 		135DDDE41F0383C800436432 /* CellItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellItem.h; sourceTree = "<group>"; };
 		135DDDE51F0383C800436432 /* CellItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellItem.m; sourceTree = "<group>"; };
+		135DDDE81F03929B00436432 /* ReactiveCellsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactiveCellsVC.h; sourceTree = "<group>"; };
+		135DDDE91F03929B00436432 /* ReactiveCellsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactiveCellsVC.m; sourceTree = "<group>"; };
+		135DDDEC1F0392F400436432 /* ReactiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactiveCell.h; sourceTree = "<group>"; };
+		135DDDED1F0392F400436432 /* ReactiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactiveCell.m; sourceTree = "<group>"; };
+		135DDDEE1F0392F400436432 /* ReactiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReactiveCell.xib; sourceTree = "<group>"; };
+		135DDDEF1F0392F400436432 /* ReactiveCellsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactiveCellsView.h; sourceTree = "<group>"; };
+		135DDDF01F0392F400436432 /* ReactiveCellsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactiveCellsView.m; sourceTree = "<group>"; };
+		135DDDF11F0392F400436432 /* ReactiveCellsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReactiveCellsView.xib; sourceTree = "<group>"; };
 		13CCC0401EE906C10039004D /* ReactiveSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13CCC0441EE906C10039004D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		13CCC0461EE906C10039004D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -129,6 +142,28 @@
 			path = CellItem;
 			sourceTree = "<group>";
 		};
+		135DDDE71F03927500436432 /* ReactiveCellsVC */ = {
+			isa = PBXGroup;
+			children = (
+				135DDDE81F03929B00436432 /* ReactiveCellsVC.h */,
+				135DDDE91F03929B00436432 /* ReactiveCellsVC.m */,
+			);
+			path = ReactiveCellsVC;
+			sourceTree = "<group>";
+		};
+		135DDDEB1F0392E400436432 /* ReactiveCellsView */ = {
+			isa = PBXGroup;
+			children = (
+				135DDDEC1F0392F400436432 /* ReactiveCell.h */,
+				135DDDED1F0392F400436432 /* ReactiveCell.m */,
+				135DDDEE1F0392F400436432 /* ReactiveCell.xib */,
+				135DDDEF1F0392F400436432 /* ReactiveCellsView.h */,
+				135DDDF01F0392F400436432 /* ReactiveCellsView.m */,
+				135DDDF11F0392F400436432 /* ReactiveCellsView.xib */,
+			);
+			path = ReactiveCellsView;
+			sourceTree = "<group>";
+		};
 		13CCC0371EE906C10039004D = {
 			isa = PBXGroup;
 			children = (
@@ -151,10 +186,12 @@
 		13CCC0421EE906C10039004D /* ReactiveSample */ = {
 			isa = PBXGroup;
 			children = (
+				135DDDEB1F0392E400436432 /* ReactiveCellsView */,
 				135DDDE31F0383AF00436432 /* CellItem */,
 				135DDDD81F037E2E00436432 /* DelegateCellsView */,
 				135DDDD41F037C3600436432 /* DelegateCellsVC */,
 				13CCC0621EE9182A0039004D /* DelegateFeedback */,
+				135DDDE71F03927500436432 /* ReactiveCellsVC */,
 				13CCC0611EE9181B0039004D /* ReactiveFeedback */,
 				135DDDD01F037A8800436432 /* ThreeFeedbacksVC */,
 				13CCC0461EE906C10039004D /* AppDelegate.h */,
@@ -328,12 +365,14 @@
 				13E5701E1EE91C84005B0380 /* DelegateFeedbackView.xib in Resources */,
 				13E570221EE92805005B0380 /* Localizable.strings in Resources */,
 				13E570291EE935BC005B0380 /* ReactiveFeedbackContainerView.xib in Resources */,
+				135DDDF51F0392F400436432 /* ReactiveCellsView.xib in Resources */,
 				135DDDDD1F037E4100436432 /* DelegateCellsView.xib in Resources */,
 				135DDDE21F03805E00436432 /* DelegateCell.xib in Resources */,
 				13E570191EE91923005B0380 /* DelegateFeedbackContainerView.xib in Resources */,
 				13E5702E1EE935C6005B0380 /* ReactiveFeedbackView.xib in Resources */,
 				13CCC0531EE906C10039004D /* LaunchScreen.storyboard in Resources */,
 				13CCC0501EE906C10039004D /* Assets.xcassets in Resources */,
+				135DDDF31F0392F400436432 /* ReactiveCell.xib in Resources */,
 				13CCC04E1EE906C10039004D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,12 +439,15 @@
 				135DDDDC1F037E4100436432 /* DelegateCellsView.m in Sources */,
 				135DDDD71F037C5000436432 /* DelegateCellsVC.m in Sources */,
 				135DDDD31F037A9D00436432 /* ThreeFeedbacksVC.m in Sources */,
+				135DDDEA1F03929B00436432 /* ReactiveCellsVC.m in Sources */,
 				13CCC0481EE906C10039004D /* AppDelegate.m in Sources */,
 				13CCC0601EE916520039004D /* UIView+NibFile.m in Sources */,
 				135DDDE11F03805E00436432 /* DelegateCell.m in Sources */,
 				13CCC05F1EE916520039004D /* UIView+Embed.m in Sources */,
 				13E570171EE91906005B0380 /* DelegateFeedbackContainerView.m in Sources */,
 				13CCC0451EE906C10039004D /* main.m in Sources */,
+				135DDDF21F0392F400436432 /* ReactiveCell.m in Sources */,
+				135DDDF41F0392F400436432 /* ReactiveCellsView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
