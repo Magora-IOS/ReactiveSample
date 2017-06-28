@@ -19,17 +19,17 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="NKY-wf-y42" kind="relationship" relationship="rootViewController" id="tBH-oK-qiH"/>
+                        <segue destination="cvx-gS-8La" kind="relationship" relationship="rootViewController" id="Z0e-oU-B3m"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mT6-uT-nc6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-871" y="218"/>
         </scene>
-        <!--Reactive Sample-->
+        <!--3+3 feedbacks-->
         <scene sceneID="AFK-Cx-wXi">
             <objects>
-                <viewController id="NKY-wf-y42" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="NKY-wf-y42" customClass="ThreeFeedbacksVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="V7I-Zs-iqE"/>
                         <viewControllerLayoutGuide type="bottom" id="fRD-Qb-Aoa"/>
@@ -82,7 +82,7 @@
                             <constraint firstItem="fRD-Qb-Aoa" firstAttribute="top" secondItem="Gjl-Dr-tXw" secondAttribute="bottom" id="p9N-6m-yqi"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Reactive Sample" id="9My-hr-sc9"/>
+                    <navigationItem key="navigationItem" title="3+3 feedbacks" id="9My-hr-sc9"/>
                     <connections>
                         <outlet property="delegateContainerView" destination="qS6-V7-kPL" id="g8D-Bn-JMF"/>
                         <outlet property="reactiveContainerView" destination="rJi-3i-VhT" id="5pi-LC-t0P"/>
@@ -90,7 +90,128 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5jf-x1-Aj6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-66.400000000000006" y="216.34182908545728"/>
+            <point key="canvasLocation" x="1038" y="-507"/>
+        </scene>
+        <!--Reactive sample-->
+        <scene sceneID="Vpl-FR-6YW">
+            <objects>
+                <viewController id="cvx-gS-8La" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k83-Pd-fhd"/>
+                        <viewControllerLayoutGuide type="bottom" id="f7H-dX-mex"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pld-6q-48B">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7K6-HR-Ebs">
+                                <rect key="frame" x="36" y="94" width="303" height="30"/>
+                                <state key="normal" title="3+3 feedbacks"/>
+                                <connections>
+                                    <segue destination="NKY-wf-y42" kind="show" id="aLC-Dv-ezN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fB7-8A-Rne">
+                                <rect key="frame" x="36" y="144" width="303" height="30"/>
+                                <state key="normal" title="Delegate cells"/>
+                                <connections>
+                                    <segue destination="jba-3J-Xoc" kind="show" id="eeF-XL-hSV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxF-SH-bBq">
+                                <rect key="frame" x="36" y="194" width="303" height="30"/>
+                                <state key="normal" title="Reactive cells"/>
+                                <connections>
+                                    <segue destination="9Zu-wd-MRh" kind="show" id="6ab-rr-mEm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="fB7-8A-Rne" secondAttribute="trailing" constant="20" id="291-XW-dy5"/>
+                            <constraint firstItem="hxF-SH-bBq" firstAttribute="top" secondItem="fB7-8A-Rne" secondAttribute="bottom" constant="20" id="2gc-81-1Qp"/>
+                            <constraint firstItem="7K6-HR-Ebs" firstAttribute="top" secondItem="k83-Pd-fhd" secondAttribute="bottom" constant="30" id="QJG-IX-XxU"/>
+                            <constraint firstItem="fB7-8A-Rne" firstAttribute="top" secondItem="7K6-HR-Ebs" secondAttribute="bottom" constant="20" id="VKV-Wv-PZP"/>
+                            <constraint firstItem="7K6-HR-Ebs" firstAttribute="leading" secondItem="Pld-6q-48B" secondAttribute="leadingMargin" constant="20" id="cE5-Ha-0nw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7K6-HR-Ebs" secondAttribute="trailing" constant="20" id="h6p-GV-abq"/>
+                            <constraint firstItem="hxF-SH-bBq" firstAttribute="leading" secondItem="Pld-6q-48B" secondAttribute="leadingMargin" constant="20" id="oce-kb-Keq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hxF-SH-bBq" secondAttribute="trailing" constant="20" id="uDn-ir-ldb"/>
+                            <constraint firstItem="fB7-8A-Rne" firstAttribute="leading" secondItem="Pld-6q-48B" secondAttribute="leadingMargin" constant="20" id="yrV-5d-m3M"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Reactive sample" id="nFI-0X-NfN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t3T-dx-bAk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="49" y="217"/>
+        </scene>
+        <!--Delegate cells-->
+        <scene sceneID="U9N-q4-YHp">
+            <objects>
+                <viewController id="jba-3J-Xoc" customClass="DelegateCellsVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xFR-Pf-Xkv"/>
+                        <viewControllerLayoutGuide type="bottom" id="cRk-kE-24q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gg5-64-3H4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3IE-hc-NAF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3IE-hc-NAF" firstAttribute="leading" secondItem="Gg5-64-3H4" secondAttribute="leading" id="1UI-iC-8ag"/>
+                            <constraint firstAttribute="trailing" secondItem="3IE-hc-NAF" secondAttribute="trailing" id="DZh-Ss-z0u"/>
+                            <constraint firstItem="3IE-hc-NAF" firstAttribute="top" secondItem="Gg5-64-3H4" secondAttribute="top" id="suY-Yf-QFu"/>
+                            <constraint firstItem="cRk-kE-24q" firstAttribute="top" secondItem="3IE-hc-NAF" secondAttribute="bottom" id="uV5-A4-eix"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Delegate cells" id="aKG-2w-2Z4"/>
+                    <connections>
+                        <outlet property="containerView" destination="3IE-hc-NAF" id="1Nv-Ci-z7Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xH6-9H-BcT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1038" y="216"/>
+        </scene>
+        <!--Reactive cells-->
+        <scene sceneID="LG5-t5-EEu">
+            <objects>
+                <viewController id="9Zu-wd-MRh" customClass="ReactiveCellsVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ihc-jk-7m2"/>
+                        <viewControllerLayoutGuide type="bottom" id="wcO-RH-bK5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KON-7l-VnG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Tj-2b-d9N">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1Tj-2b-d9N" firstAttribute="top" secondItem="KON-7l-VnG" secondAttribute="top" id="BYK-wU-nje"/>
+                            <constraint firstAttribute="trailing" secondItem="1Tj-2b-d9N" secondAttribute="trailing" id="dpa-Xy-739"/>
+                            <constraint firstItem="wcO-RH-bK5" firstAttribute="top" secondItem="1Tj-2b-d9N" secondAttribute="bottom" id="i5P-fz-N4x"/>
+                            <constraint firstItem="1Tj-2b-d9N" firstAttribute="leading" secondItem="KON-7l-VnG" secondAttribute="leading" id="vFN-WM-aDR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Reactive cells" id="XGE-mJ-FuR"/>
+                    <connections>
+                        <outlet property="containerView" destination="1Tj-2b-d9N" id="KqV-q0-b17"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cSu-Uh-hrp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1038" y="941"/>
         </scene>
     </scenes>
 </document>

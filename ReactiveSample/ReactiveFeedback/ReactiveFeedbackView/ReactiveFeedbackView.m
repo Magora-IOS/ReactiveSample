@@ -3,6 +3,8 @@
 
 #import <ReactiveObjC/ReactiveObjC.h>
 
+#define MEASURE_DURATION
+
 @interface ReactiveFeedbackView ()
 
 @property (nonatomic, assign, readwrite) ReactiveFeedbackViewStatus status;
@@ -49,8 +51,15 @@
     [[self.acceptButton
         rac_signalForControlEvents:UIControlEventTouchUpInside]
         subscribeNext:^(id x) {
+#ifdef MEASURE_DURATION
+            CFTimeInterval dtWas = CACurrentMediaTime();
+#endif
             @strongify(self);
             self.status = ReactiveFeedbackViewStatusAccept;
+#ifdef MEASURE_DURATION
+            CFTimeInterval dtNow = CACurrentMediaTime();
+            NSLog(@"ReactiveFeedbackView. Accept duration: '%@'", @(dtNow - dtWas));
+#endif
         }];
 }
 
@@ -73,8 +82,15 @@
     [[self.declineButton
         rac_signalForControlEvents:UIControlEventTouchUpInside]
         subscribeNext:^(id x) {
+#ifdef MEASURE_DURATION
+            CFTimeInterval dtWas = CACurrentMediaTime();
+#endif
             @strongify(self);
             self.status = ReactiveFeedbackViewStatusDecline;
+#ifdef MEASURE_DURATION
+            CFTimeInterval dtNow = CACurrentMediaTime();
+            NSLog(@"ReactiveFeedbackView. Decline duration: '%@'", @(dtNow - dtWas));
+#endif
         }];
 }
 
